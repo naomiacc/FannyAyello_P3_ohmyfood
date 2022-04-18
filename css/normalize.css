@@ -10,7 +10,6 @@
 
  html {
     line-height: 1.15; /* 1 */
-    -webkit-text-size-adjust: 100%; /* 2 */
   }
   
   /* Sections
@@ -22,6 +21,7 @@
   
   body {
     margin: 0;
+    padding: 0;
   }
   
   /**
@@ -73,8 +73,13 @@
    * Remove the gray background on active links in IE 10.
    */
   
-  a {
+  ul, a {
     background-color: transparent;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color:black
   }
   
   /**
@@ -146,6 +151,11 @@
    */
   
   img {
+    width: 100%;
+    min-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
     border-style: none;
   }
   

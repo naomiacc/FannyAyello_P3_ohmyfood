@@ -1,0 +1,31 @@
+.header-margin{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+        .header-logo{
+            text-align: center;
+            background-color: white;
+            padding : 20px 0px;
+            width: 100%;
+        }
+            .logo__img{
+                text-align: center;
+                width: auto;
+                height: auto;
+            }
+        .header-form{
+            width: 100%;
+            padding: 20px 0px;
+            text-align: center;   
+            background-color: lighten(grey,40%);
+            box-shadow: inset 0px 5px 10px -10px;
+            
+            .form__input{
+                background-color: lighten(grey,40%); 
+                border:none;
+                width: 130px;
+                padding:0px 10px;
+            }
+        }
+}
+

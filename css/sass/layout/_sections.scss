@@ -1,0 +1,80 @@
+.section-exploration{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding:40px 20px;
+    background-color: lighten(grey,45%);
+    
+    h1{
+        text-align: center;
+        width: 100%;
+        font-size: 25px;
+        margin-top:0px;
+        padding: 0px 20px;
+    }
+
+    .exploration__text{
+        text-align: center;
+        width: 100%;
+        font-size:19px;
+        font-weight: lighter;
+        margin-top: 0px;
+    }
+
+    .exploration__btn{
+        text-align: center;
+        box-shadow: 3px 3px 8px 3px grey;
+        color:white;
+        border-radius:30px;
+        background: linear-gradient(#FF79DA, #9356DC);
+        padding: 15px 15px;
+        width: 220px;
+    }
+}
+
+.section-process{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding:20px 20px 20px 35px;
+
+    h2{
+        text-align: left;
+    }
+
+    .section-process__card{
+        display: flex;
+        flex-direction: row;
+        background-color: lighten(grey,45%);
+        border-radius: 20px;
+        padding: 25px 0px;
+        margin-bottom: 20px;
+        box-shadow: 3px 3px 8px 3px #d3d3d3;
+        -webkit-box-shadow : 5px 10px 5px #e8e8e8;
+
+        .card__number{
+            text-align: center;
+            background-color: #9356DC;
+            color:white;
+            border-radius: 50px;
+            width: 25px;
+            height: 25px;
+            margin-left: -10px;
+        }
+
+        .card__icon{
+            text-align: center;
+            width: 50px;
+        }
+
+        .card__text{
+            text-align: center;
+        }
+
+
+    }
+}

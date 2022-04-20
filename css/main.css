@@ -104,19 +104,22 @@ a:visited {
   margin-bottom: 20px;
   box-shadow: 3px 3px 8px 3px #d3d3d3;
   -webkit-box-shadow: 5px 10px 5px #e8e8e8;
+  align-items: center;
 }
 .section-process .section-process__card .card__number {
-  text-align: center;
+  display: flex;
   background-color: #9356DC;
   color: white;
   border-radius: 50px;
   width: 25px;
   height: 25px;
   margin-left: -10px;
+  align-items: center;
+  padding-left: 8px;
 }
 .section-process .section-process__card .card__icon {
-  text-align: center;
   width: 50px;
+  color: grey;
 }
 .section-process .section-process__card .card__text {
   text-align: center;

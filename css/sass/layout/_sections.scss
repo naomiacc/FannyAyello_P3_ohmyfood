@@ -40,7 +40,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    padding:20px 20px 20px 35px;
+    padding:20px 20px;
 
     h2{
         text-align: left;
@@ -53,6 +53,7 @@
         border-radius: 20px;
         padding: 25px 0px;
         margin-bottom: 20px;
+        margin-left:10px;
         box-shadow: 3px 3px 8px 3px #d3d3d3;
         -webkit-box-shadow : 5px 10px 5px #e8e8e8;
         align-items: center;
@@ -165,15 +166,9 @@
             margin: 0px 5px 0px 5px;
             flex-direction: column;
             height: 70px;
-            
-            /*@media (max-width: 767px){
-              height: 30%;
-            }*/
         }
     }  
 }
-
-
 
 h4 {
     margin-top: 10px;

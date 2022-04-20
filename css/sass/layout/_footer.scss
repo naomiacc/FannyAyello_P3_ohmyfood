@@ -1,0 +1,41 @@
+.section-footer{
+    padding: 20px 20px;
+    background-color: #383838;
+
+    .container-footer{
+        display: flex;
+        flex-direction: column;
+    
+        >h2{
+            font-family: Shrikhand;
+            font-weight: lighter;
+            font-size:large;
+            width: 100%;
+        }
+    }
+}
+
+.link{
+    color:white;
+    display: flex;
+
+    >i{
+        margin-right: 10px;
+        font-size: small;
+    }
+
+    >p{
+        margin:0px;
+        margin-bottom: 10px;
+    }
+}
+
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+
+    .footer-li{
+        flex-direction: row;
+    }
+}
+

@@ -43,7 +43,7 @@ body h1 h2 h3 h4 {
 .header-margin .header-form .form__input {
   background-color: #e6e6e6;
   border: none;
-  width: 130px;
+  width: 140px;
   padding: 0px 10px;
 }
 
@@ -72,12 +72,15 @@ body h1 h2 h3 h4 {
 }
 .section-exploration .exploration__btn {
   text-align: center;
-  box-shadow: 3px 3px 8px 3px grey;
   color: white;
   border-radius: 30px;
   background: linear-gradient(#FF79DA, #9356DC);
   padding: 15px 15px;
   width: 220px;
+}
+.section-exploration .exploration__btn:hover {
+  opacity: 0.9;
+  box-shadow: 3px 3px 8px 3px grey;
 }
 
 .section-process {
@@ -88,8 +91,12 @@ body h1 h2 h3 h4 {
   justify-content: center;
   padding: 20px 20px;
 }
-.section-process h2 {
-  text-align: left;
+@media (min-width: 768px) {
+  .section-process {
+    display: block;
+    margin: auto;
+    width: 700px;
+  }
 }
 .section-process .section-process__card {
   display: flex;
@@ -102,6 +109,12 @@ body h1 h2 h3 h4 {
   box-shadow: 3px 3px 8px 3px #d3d3d3;
   -webkit-box-shadow: 5px 10px 5px #e8e8e8;
   align-items: center;
+}
+.section-process .section-process__card:hover {
+  background-color: #f2eafb;
+}
+.section-process .section-process__card:hover i {
+  color: #9356DC;
 }
 .section-process .section-process__card .card__number {
   display: flex;
@@ -234,6 +247,15 @@ h4 {
   font-weight: lighter;
 }
 
+h2 {
+  text-align: left;
+}
+@media (min-width: 768px) {
+  h2 {
+    text-align: center;
+  }
+}
+
 .section-footer {
   padding: 20px 20px;
   background-color: #383838;
@@ -252,6 +274,7 @@ h4 {
 .link {
   color: white;
   display: flex;
+  width: 200px;
 }
 .link > i {
   margin-right: 10px;

@@ -1,0 +1,16 @@
+/*btn violet*/
+
+@mixin btn-purple {
+    text-align: center;
+    color:white;
+    border-radius:30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    padding: 15px 15px;
+    width: 220px;
+}
+
+@mixin btn-purple-hover{
+    opacity: 0.9;
+    box-shadow: 3px 3px 8px 3px grey;
+}
+

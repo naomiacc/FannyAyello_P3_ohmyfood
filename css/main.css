@@ -180,9 +180,17 @@ body h1 h2 h3 h4 {
   }
 }
 .menu-card .menu-article .title {
+  position: relative;
   width: 100%;
   font-size: 20px;
   font-weight: lighter;
+}
+.menu-card .menu-article .title::after {
+  position: absolute;
+  color: #99E2D0;
+  content: "______";
+  left: 45%;
+  bottom: -10px;
 }
 
 /*header main page*/

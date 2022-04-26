@@ -1,3 +1,4 @@
+/*header main page*/
 .header-margin{
     display: flex;
     flex-direction: row;
@@ -30,3 +31,44 @@
     }
 }
 
+/*header menu pages*/
+.header-nav{
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    .back-arrow{
+        position:absolute;
+        width: 60px;
+        height: 56px;
+        top: 0px;
+        left: 0px;
+
+        &>i{
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 20px;            
+        }
+    }
+
+    .header-nav-logo{
+        text-align: center;
+        background-color: white;
+        padding : 15px 0px;
+        width: 100%;
+
+        .logo__img--nav{
+            text-align: center;
+            width: auto;
+            height: 23px;
+        }
+    }    
+}
+
+.header-img{
+    width: 100%;
+    height: 250px;
+    display: flex;
+}

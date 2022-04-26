@@ -1,3 +1,5 @@
+/*card main page*/
+
 .section-process__card{
     display: flex;
     flex-direction: row;
@@ -104,4 +106,41 @@
             font-weight: lighter;
         }
     }  
+}
+
+/*card menu pages*/
+
+.menu-card{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    
+    @media (max-width: 767px){
+    flex-direction: column;
+    }
+
+    .menu-article{
+    display: flex;
+    flex-wrap: wrap;
+    flex: auto;
+    justify-content: space-between;
+    align-content: center;
+    gap:20px;
+    width: 30%;
+    border-radius: 20px;
+    padding:15px;
+        @media (min-width: 768px) and (max-width: 1150px){
+        width: 100%;
+        flex: 50%;
+        }
+        @media (max-width: 767px){
+        width: 100%;
+        }
+
+        .title{
+            width: 100%;
+            font-size: 20px;
+            font-weight: lighter;
+        }
+    }
 }

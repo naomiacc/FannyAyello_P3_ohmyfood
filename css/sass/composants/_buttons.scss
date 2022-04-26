@@ -1,7 +1,11 @@
-.exploration__btn{
+.purple__btn{
     @include btn-purple;
     
     &:hover{
     @include btn-purple-hover;
     }
+}
+
+.box__btn{
+    @include btn-purple-box;
 }

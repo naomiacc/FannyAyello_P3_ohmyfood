@@ -14,3 +14,8 @@
     box-shadow: 3px 3px 8px 3px grey;
 }
 
+@mixin btn-purple-box{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}

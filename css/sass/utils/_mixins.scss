@@ -19,3 +19,14 @@
     justify-content: center;
     padding: 30px;
 }
+
+/*tag "nouveau"*/
+
+@mixin tag-new-green {
+    position:absolute;
+    background-color: $tertiary-color;
+    color:green;
+    padding: 5px 10px;
+    top: 10px;
+    right: 30px;
+}

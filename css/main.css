@@ -2,6 +2,7 @@
 /*fonts family*/
 /*padding size*/
 /*btn violet*/
+/*tag "nouveau"*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap");
 * {
@@ -317,6 +318,7 @@ body h1 h2 h3 h4 {
   }
 }
 .section-restaurants .container-restaurants-flex .box {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   flex: auto;
@@ -335,6 +337,14 @@ body h1 h2 h3 h4 {
     width: 100%;
     flex: 50%;
   }
+}
+.section-restaurants .container-restaurants-flex .box .tag-new {
+  position: absolute;
+  background-color: #99E2D0;
+  color: green;
+  padding: 5px 10px;
+  top: 10px;
+  right: 30px;
 }
 
 h2 {

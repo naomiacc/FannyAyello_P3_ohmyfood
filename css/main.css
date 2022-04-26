@@ -162,7 +162,6 @@ body h1 h2 h3 h4 {
   flex-wrap: wrap;
   flex: auto;
   justify-content: space-between;
-  align-content: center;
   gap: 20px;
   width: 30%;
   border-radius: 20px;
@@ -179,18 +178,28 @@ body h1 h2 h3 h4 {
     width: 100%;
   }
 }
-.menu-card .menu-article .title {
-  position: relative;
+
+.menu-article__title {
+  align-items: center;
+  width: 100%;
+}
+.menu-article__title .title {
   width: 100%;
   font-size: 20px;
   font-weight: lighter;
+  margin-bottom: 0px;
 }
-.menu-card .menu-article .title::after {
-  position: absolute;
+.menu-article__title .subtitle {
+  background-color: #99E2D0;
   color: #99E2D0;
-  content: "______";
-  left: 45%;
-  bottom: -10px;
+  height: 1px;
+  width: 30px;
+  margin-left: 0px;
+}
+@media (min-width: 768px) {
+  .menu-article__title .subtitle {
+    margin: auto;
+  }
 }
 
 /*header main page*/
@@ -387,6 +396,7 @@ h2 {
 
 .menu-list {
   width: 100%;
+  height: 70px;
   display: flex;
   flex-direction: row;
   background-color: white;
@@ -405,7 +415,7 @@ h2 {
   font-weight: lighter;
 }
 .menu-list .meal-price {
-  padding-right: 5px;
+  padding-right: 10px;
   align-self: flex-end;
 }
 .menu-list .meal-check-mark {

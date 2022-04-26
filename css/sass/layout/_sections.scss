@@ -118,6 +118,7 @@ h2{
 
 .menu-list{
     width: 100%;
+    height:70px;
     display: flex;
     flex-direction: row;
     background-color: white;
@@ -138,7 +139,7 @@ h2{
     }
 
     .meal-price{
-        padding-right: 5px;
+        padding-right: 10px;
         align-self: flex-end;
     }
     .meal-check-mark{

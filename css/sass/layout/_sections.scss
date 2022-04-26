@@ -1,3 +1,5 @@
+/*section main page*/
+
 .section-exploration{
     text-align: center;
     display: flex;
@@ -71,7 +73,7 @@
             @media (max-width: 767px){
             width: 100%;
             }
-            @media (min-width: 768px) and (max-width: 991px){
+            @media (min-width: 768px) and (max-width: 1150px){
             width: 100%;
             flex: 50%;
             }
@@ -86,3 +88,57 @@ h2{
     }
 }
 
+/*section menu pages*/
+
+.section-menu{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color: #f3f3f3;
+    margin-top: -50px;
+    border-radius: 20px 20px 0px 0px;
+    position:relative;
+    z-index: 1;
+
+    .title__restaurant{
+    text-align: left;
+    font-family: 'Shrikhand', cursive;
+    font-size: 25px;
+    font-weight: lighter;
+    margin-left: 15px;
+    }
+}
+
+.menu-list{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+
+    .meal{
+        flex-grow: 1;
+
+        .meal-title{
+            margin:0px;
+            margin:5px 0px;
+            font-weight: normal;
+        }
+        .meal-element{
+            font-weight: lighter;
+        }
+    }
+
+    .meal-price{
+        padding-right: 5px;
+        align-self: flex-end;
+    }
+    .meal-check-mark{
+        background-color: $tertiary-color;
+        align-self: center;
+        display: none;
+    }
+}

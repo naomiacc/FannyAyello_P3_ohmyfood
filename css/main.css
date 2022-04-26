@@ -1,3 +1,7 @@
+/*fonts color*/
+/*fonts family*/
+/*padding size*/
+/*btn violet*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap");
 * {
@@ -15,6 +19,19 @@ body {
 }
 body h1 h2 h3 h4 {
   font-family: "Shrikhand", cursive;
+}
+
+.exploration__btn {
+  text-align: center;
+  color: white;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  padding: 15px 15px;
+  width: 220px;
+}
+.exploration__btn:hover {
+  opacity: 0.9;
+  box-shadow: 3px 3px 8px 3px grey;
 }
 
 .section-process__card {

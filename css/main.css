@@ -424,39 +424,38 @@ h2 {
   }
 }
 
-.section-footer {
+.footer {
   padding: 20px 20px;
   background-color: #383838;
 }
-.section-footer .container-footer {
+.footer__container {
   display: flex;
   flex-direction: column;
 }
-.section-footer .container-footer > h2 {
+.footer__container > h2 {
   font-family: Shrikhand;
   font-weight: lighter;
   font-size: large;
   width: 100%;
 }
+.footer__container__ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer__container__ul__li {
+  flex-direction: row;
+}
 
-.link {
+.footer__container__link {
   color: white;
   display: flex;
   width: 200px;
 }
-.link > i {
+.footer__container__link > i {
   margin-right: 10px;
   font-size: small;
 }
-.link > p {
+.footer__container__link > p {
   margin: 0px;
   margin-bottom: 10px;
-}
-
-.footer-ul {
-  display: flex;
-  flex-direction: column;
-}
-.footer-ul .footer-li {
-  flex-direction: row;
 }/*# sourceMappingURL=main.css.map */

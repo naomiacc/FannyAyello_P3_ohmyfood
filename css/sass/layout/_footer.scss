@@ -1,8 +1,8 @@
-.section-footer{
+.footer{
     padding: 20px 20px;
     background-color: #383838;
 
-    .container-footer{
+    &__container{
         display: flex;
         flex-direction: column;
     
@@ -12,10 +12,19 @@
             font-size:large;
             width: 100%;
         }
+
+        &__ul{
+            display: flex;
+            flex-direction: column;
+        
+            &__li{
+                flex-direction: row;
+            }
+        }
     }
 }
 
-.link{
+.footer__container__link{
     color:white;
     display: flex;
     width: 200px;
@@ -30,13 +39,3 @@
         margin-bottom: 10px;
     }
 }
-
-.footer-ul{
-    display: flex;
-    flex-direction: column;
-
-    .footer-li{
-        flex-direction: row;
-    }
-}
-

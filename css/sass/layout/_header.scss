@@ -1,28 +1,30 @@
 /*header main page*/
-.header-margin{
+.header{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     
-    .header-logo{
+    &__logo{
     text-align: center;
     background-color: white;
     padding : 20px 0px;
     width: 100%;
-    }
-        .logo__img{
+
+        &__img{
             text-align: center;
             width: auto;
             height: auto;
         }
-        
-    .header-form{
+    }
+               
+    .header__form{
         width: 100%;
         padding: 20px 0px;
         text-align: center;   
         background-color: lighten(grey,40%);
         box-shadow: inset 0px 5px 10px -10px;    
-        .form__input{
+        
+        &__input{
             background-color: lighten(grey,40%); 
             border:none;
             width: 140px;
@@ -32,12 +34,12 @@
 }
 
 /*header menu pages*/
-.header-nav{
+.header__nav{
     position: relative;
     text-align: center;
     width: 100%;
 
-    .back-arrow{
+    &__arrow{
         position:absolute;
         width: 60px;
         height: 56px;
@@ -53,13 +55,13 @@
         }
     }
 
-    .header-nav-logo{
+    &__logo{
         text-align: center;
         background-color: white;
         padding : 15px 0px;
         width: 100%;
 
-        .logo__img--nav{
+        &__img{
             text-align: center;
             width: auto;
             height: 23px;
@@ -67,7 +69,7 @@
     }    
 }
 
-.header-img{
+.header__img{
     width: 100%;
     height: 250px;
     display: flex;

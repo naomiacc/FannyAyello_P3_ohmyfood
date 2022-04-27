@@ -203,30 +203,30 @@ body h1 h2 h3 h4 {
 }
 
 /*header main page*/
-.header-margin {
+.header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.header-margin .header-logo {
+.header__logo {
   text-align: center;
   background-color: white;
   padding: 20px 0px;
   width: 100%;
 }
-.header-margin .logo__img {
+.header__logo__img {
   text-align: center;
   width: auto;
   height: auto;
 }
-.header-margin .header-form {
+.header .header__form {
   width: 100%;
   padding: 20px 0px;
   text-align: center;
   background-color: #e6e6e6;
   box-shadow: inset 0px 5px 10px -10px;
 }
-.header-margin .header-form .form__input {
+.header .header__form__input {
   background-color: #e6e6e6;
   border: none;
   width: 140px;
@@ -234,38 +234,38 @@ body h1 h2 h3 h4 {
 }
 
 /*header menu pages*/
-.header-nav {
+.header__nav {
   position: relative;
   text-align: center;
   width: 100%;
 }
-.header-nav .back-arrow {
+.header__nav__arrow {
   position: absolute;
   width: 60px;
   height: 56px;
   top: 0px;
   left: 0px;
 }
-.header-nav .back-arrow > i {
+.header__nav__arrow > i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
 }
-.header-nav .header-nav-logo {
+.header__nav__logo {
   text-align: center;
   background-color: white;
   padding: 15px 0px;
   width: 100%;
 }
-.header-nav .header-nav-logo .logo__img--nav {
+.header__nav__logo__img {
   text-align: center;
   width: auto;
   height: 23px;
 }
 
-.header-img {
+.header__img {
   width: 100%;
   height: 250px;
   display: flex;

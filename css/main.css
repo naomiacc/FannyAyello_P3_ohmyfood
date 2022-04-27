@@ -22,7 +22,7 @@ body h1 h2 h3 h4 {
   font-family: "Shrikhand", cursive;
 }
 
-.purple__btn {
+.btn-link {
   text-align: center;
   color: white;
   border-radius: 30px;
@@ -30,19 +30,19 @@ body h1 h2 h3 h4 {
   padding: 15px 15px;
   width: 220px;
 }
-.purple__btn:hover {
+.btn-link:hover {
   opacity: 0.9;
   box-shadow: 3px 3px 8px 3px grey;
 }
 
-.box__btn {
+.btn-box {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
 
 /*card main page*/
-.section-process__card {
+.section__process__card {
   display: flex;
   flex-direction: row;
   background-color: #f3f3f3;
@@ -54,13 +54,13 @@ body h1 h2 h3 h4 {
   -webkit-box-shadow: 5px 10px 5px #e8e8e8;
   align-items: center;
 }
-.section-process__card:hover {
+.section__process__card:hover {
   background-color: #f2eafb;
 }
-.section-process__card:hover i {
+.section__process__card:hover i {
   color: #9356DC;
 }
-.section-process__card .card__number {
+.section__process__card__number {
   display: flex;
   background-color: #9356DC;
   color: white;
@@ -71,15 +71,15 @@ body h1 h2 h3 h4 {
   align-items: center;
   padding-left: 8px;
 }
-.section-process__card .card__icon {
+.section__process__card__icon {
   width: 50px;
   color: grey;
 }
-.section-process__card .card__text {
+.section__process__card__text {
   text-align: center;
 }
 
-.box-article {
+.article {
   flex: auto;
   margin-right: 20px;
   margin-bottom: 30px;
@@ -90,24 +90,24 @@ body h1 h2 h3 h4 {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 767px) {
-  .box-article {
+  .article {
     height: 250px;
     margin-right: 0px;
   }
 }
-.box-article .container-picture {
+.article__box-picture {
   display: flex;
   max-width: 100%;
   height: 150px;
   border-radius: 20px 20px 0 0;
 }
 @media (max-width: 767px) {
-  .box-article .container-picture {
+  .article__box-picture {
     height: 70%;
     border-radius: 30px 30px 0 0;
   }
 }
-.box-article .container-picture .box-picture {
+.article__box-picture__img {
   height: 60%;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -117,19 +117,19 @@ body h1 h2 h3 h4 {
      object-position: center;
 }
 @media (max-width: 767px) {
-  .box-article .container-picture .box-picture {
+  .article__box-picture__img {
     max-width: 100%;
     height: auto;
   }
 }
-.box-article .container-text {
+.article__box-text {
   display: flex;
   display: flex;
   margin: 0px 5px 0px 5px;
   flex-direction: column;
   height: 70px;
 }
-.box-article .container-text h4 {
+.article__box-text h4 {
   margin-top: 10px;
   margin-left: 15px;
   margin-bottom: 10px;
@@ -137,7 +137,7 @@ body h1 h2 h3 h4 {
   font-size: 17px;
   width: 100%;
 }
-.box-article .container-text > p {
+.article__box-text > p {
   margin: 0;
   margin-left: 15px;
   color: black;
@@ -147,17 +147,7 @@ body h1 h2 h3 h4 {
 }
 
 /*card menu pages*/
-.menu-card {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-@media (max-width: 767px) {
-  .menu-card {
-    flex-direction: column;
-  }
-}
-.menu-card .menu-article {
+.article__menu {
   display: flex;
   flex-wrap: wrap;
   flex: auto;
@@ -168,28 +158,28 @@ body h1 h2 h3 h4 {
   padding: 15px;
 }
 @media (min-width: 768px) and (max-width: 1150px) {
-  .menu-card .menu-article {
+  .article__menu {
     width: 100%;
     flex: 50%;
   }
 }
 @media (max-width: 767px) {
-  .menu-card .menu-article {
+  .article__menu {
     width: 100%;
   }
 }
 
-.menu-article__title {
+.article__menu__title {
   align-items: center;
   width: 100%;
 }
-.menu-article__title .title {
+.article__menu__title__text {
   width: 100%;
   font-size: 20px;
   font-weight: lighter;
   margin-bottom: 0px;
 }
-.menu-article__title .subtitle {
+.article__menu__title__subtitle {
   background-color: #99E2D0;
   color: #99E2D0;
   height: 1px;
@@ -197,9 +187,39 @@ body h1 h2 h3 h4 {
   margin-left: 0px;
 }
 @media (min-width: 768px) {
-  .menu-article__title .subtitle {
+  .article__menu__title__subtitle {
     margin: auto;
   }
+}
+
+.article__menu__box {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 20px;
+  padding: 10px;
+}
+.article__menu__box__meal {
+  flex-grow: 1;
+}
+.article__menu__box__meal__title {
+  margin: 0px;
+  margin: 5px 0px;
+  font-weight: normal;
+}
+.article__menu__box__meal__description {
+  font-weight: lighter;
+}
+.article__menu__box__price {
+  padding-right: 10px;
+  align-self: flex-end;
+}
+.article__menu__box__check {
+  background-color: #99E2D0;
+  align-self: center;
+  display: none;
 }
 
 /*header main page*/
@@ -272,7 +292,7 @@ body h1 h2 h3 h4 {
 }
 
 /*section main page*/
-.section-exploration {
+.section__exploration {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -281,14 +301,14 @@ body h1 h2 h3 h4 {
   padding: 40px 20px;
   background-color: #f3f3f3;
 }
-.section-exploration h1 {
+.section__exploration h1 {
   text-align: center;
   width: 100%;
   font-size: 25px;
   margin-top: 0px;
   padding: 0px 20px;
 }
-.section-exploration .exploration__text {
+.section__exploration__text {
   text-align: center;
   width: 100%;
   font-size: 19px;
@@ -296,7 +316,7 @@ body h1 h2 h3 h4 {
   margin-top: 0px;
 }
 
-.section-process {
+.section__process {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -305,14 +325,14 @@ body h1 h2 h3 h4 {
   padding: 20px 20px;
 }
 @media (min-width: 768px) {
-  .section-process {
+  .section__process {
     display: block;
     margin: auto;
     width: 700px;
   }
 }
 
-.section-restaurants {
+.section__restaurants {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -321,20 +341,20 @@ body h1 h2 h3 h4 {
   background-color: #f3f3f3;
 }
 @media (max-width: 767px) {
-  .section-restaurants {
+  .section__restaurants {
     flex: 1;
   }
 }
-.section-restaurants .container-restaurants-flex {
+.section__restaurants__container {
   display: flex;
   flex-wrap: wrap;
 }
 @media (max-width: 767px) {
-  .section-restaurants .container-restaurants-flex {
+  .section__restaurants__container {
     flex-direction: column;
   }
 }
-.section-restaurants .container-restaurants-flex .box {
+.section__restaurants__container__link {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -345,17 +365,17 @@ body h1 h2 h3 h4 {
   width: 25%;
 }
 @media (max-width: 767px) {
-  .section-restaurants .container-restaurants-flex .box {
+  .section__restaurants__container__link {
     width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1150px) {
-  .section-restaurants .container-restaurants-flex .box {
+  .section__restaurants__container__link {
     width: 100%;
     flex: 50%;
   }
 }
-.section-restaurants .container-restaurants-flex .box .tag-new {
+.section__restaurants__container__link .tag-new {
   position: absolute;
   background-color: #99E2D0;
   color: green;
@@ -374,7 +394,7 @@ h2 {
 }
 
 /*section menu pages*/
-.section-menu {
+.section__menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -386,42 +406,22 @@ h2 {
   position: relative;
   z-index: 1;
 }
-.section-menu .title__restaurant {
+.section__menu__title {
   text-align: left;
   font-family: "Shrikhand", cursive;
   font-size: 25px;
   font-weight: lighter;
   margin-left: 15px;
 }
-
-.menu-list {
-  width: 100%;
-  height: 70px;
+.section__menu__container {
   display: flex;
-  flex-direction: row;
-  background-color: white;
-  border-radius: 20px;
-  padding: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
-.menu-list .meal {
-  flex-grow: 1;
-}
-.menu-list .meal .meal-title {
-  margin: 0px;
-  margin: 5px 0px;
-  font-weight: normal;
-}
-.menu-list .meal .meal-element {
-  font-weight: lighter;
-}
-.menu-list .meal-price {
-  padding-right: 10px;
-  align-self: flex-end;
-}
-.menu-list .meal-check-mark {
-  background-color: #99E2D0;
-  align-self: center;
-  display: none;
+@media (max-width: 767px) {
+  .section__menu__container {
+    flex-direction: column;
+  }
 }
 
 .section-footer {

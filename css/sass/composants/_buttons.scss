@@ -1,4 +1,4 @@
-.purple__btn{
+.btn-link{
     @include btn-purple;
     
     &:hover{
@@ -6,6 +6,6 @@
     }
 }
 
-.box__btn{
+.btn-box{
     @include btn-purple-box;
 }

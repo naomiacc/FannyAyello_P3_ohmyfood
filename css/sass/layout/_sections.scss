@@ -1,6 +1,6 @@
 /*section main page*/
 
-.section-exploration{
+.section__exploration{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -17,7 +17,7 @@
         padding: 0px 20px;
     }
 
-    .exploration__text{
+    &__text{
         text-align: center;
         width: 100%;
         font-size:19px;
@@ -26,7 +26,7 @@
     }
 }
 
-.section-process{
+.section__process{
     text-align: center;
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +41,7 @@
     }
 }
 
-.section-restaurants{
+.section__restaurants{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -53,7 +53,7 @@
     flex: 1;
     }
 
-    .container-restaurants-flex{
+    &__container{
         display: flex;
         flex-wrap: wrap;
         
@@ -61,7 +61,7 @@
         flex-direction: column;
         }   
 
-        .box{
+        &__link{
             position:relative;
             display: flex;
             flex-wrap: wrap;
@@ -95,7 +95,7 @@ h2{
 
 /*section menu pages*/
 
-.section-menu{
+.section__menu{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -107,44 +107,21 @@ h2{
     position:relative;
     z-index: 1;
 
-    .title__restaurant{
-    text-align: left;
-    font-family: 'Shrikhand', cursive;
-    font-size: 25px;
-    font-weight: lighter;
-    margin-left: 15px;
+    &__title{
+        text-align: left;
+        font-family: 'Shrikhand', cursive;
+        font-size: 25px;
+        font-weight: lighter;
+        margin-left: 15px;
     }
-}
 
-.menu-list{
-    width: 100%;
-    height:70px;
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 20px;
-    padding: 10px;
-
-    .meal{
-        flex-grow: 1;
-
-        .meal-title{
-            margin:0px;
-            margin:5px 0px;
-            font-weight: normal;
+    &__container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+        
+        @media (max-width: 767px){
+        flex-direction: column;
         }
-        .meal-element{
-            font-weight: lighter;
-        }
-    }
-
-    .meal-price{
-        padding-right: 10px;
-        align-self: flex-end;
-    }
-    .meal-check-mark{
-        background-color: $tertiary-color;
-        align-self: center;
-        display: none;
     }
 }

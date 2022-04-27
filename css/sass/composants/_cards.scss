@@ -1,6 +1,6 @@
 /*card main page*/
 
-.section-process__card{
+.section__process__card{
     display: flex;
     flex-direction: row;
     background-color: lighten(grey,45%);
@@ -19,7 +19,7 @@
         color: #9356DC;
     }
 
-    .card__number{
+    &__number{
         display: flex;
         background-color: #9356DC;
         color:white;
@@ -31,17 +31,17 @@
         padding-left: 8px;
     }
 
-    .card__icon{
+    &__icon{
         width: 50px;
         color:grey;
     }
 
-    .card__text{
+    &__text{
         text-align: center;
     }
 }
 
-.box-article{
+.article{
     flex: auto;
     margin-right: 20px;
     margin-bottom: 30px;
@@ -56,7 +56,7 @@
     margin-right: 0px;    
     }
 
-    .container-picture{
+    &__box-picture{
         display: flex;
         max-width: 100%;
         height: 150px;
@@ -67,7 +67,7 @@
         border-radius: 30px 30px 0 0;
         }
     
-        .box-picture{
+        &__img{
             height: 60%;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
@@ -81,14 +81,14 @@
         }
     }
     
-    .container-text{
+    &__box-text{
         display: flex;
         display: flex;
         margin: 0px 5px 0px 5px;
         flex-direction: column;
         height: 70px;
 
-        h4 {
+        h4{
             margin-top: 10px;
             margin-left: 15px;
             margin-bottom: 10px;
@@ -110,46 +110,37 @@
 
 /*card menu pages*/
 
-.menu-card{
+.article__menu{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 30px;
-    
-    @media (max-width: 767px){
-    flex-direction: column;
+    flex: auto;
+    justify-content: space-between;
+    gap:20px;
+    width: 30%;
+    border-radius: 20px;
+    padding:15px;
+
+    @media (min-width: 768px) and (max-width: 1150px){
+    width: 100%;
+    flex: 50%;
     }
-    .menu-article{
-        display: flex;
-        flex-wrap: wrap;
-        flex: auto;
-        justify-content: space-between;
-        gap:20px;
-        width: 30%;
-        border-radius: 20px;
-        padding:15px;
-    
-        @media (min-width: 768px) and (max-width: 1150px){
-        width: 100%;
-        flex: 50%;
-        }
-        @media (max-width: 767px){
-        width: 100%;
-        }
+    @media (max-width: 767px){
+    width: 100%;
     }
 }
 
-.menu-article__title{
+.article__menu__title{
     align-items: center;
     width: 100%;
 
-    .title{
+    &__text{
         width: 100%;
         font-size: 20px;
         font-weight: lighter;
         margin-bottom: 0px;
     }
 
-    .subtitle{
+    &__subtitle{
         background-color:$tertiary-color;
         color:$tertiary-color;
         height: 1px;
@@ -160,4 +151,38 @@
         margin: auto;   
         }
     }  
+}
+
+.article__menu__box{
+    width: 100%;
+    height:70px;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px;
+
+    &__meal{
+        flex-grow: 1;
+
+        &__title{
+            margin:0px;
+            margin:5px 0px;
+            font-weight: normal;
+        }
+        &__description{
+            font-weight: lighter;
+        }
+    }
+
+    &__price{
+        padding-right: 10px;
+        align-self: flex-end;
+    }
+
+    &__check{
+        background-color: $tertiary-color;
+        align-self: center;
+        display: none;
+    }
 }

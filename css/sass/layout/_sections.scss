@@ -48,17 +48,14 @@
     justify-content: center;
     padding:40px 20px;
     background-color: lighten(grey,45%);
-    
-    @media (max-width: 767px){
-    flex: 1;
-    }
 
     &__container{
         display: flex;
         flex-wrap: wrap;
-        
-        @media (max-width: 767px){
         flex-direction: column;
+        
+        @media (min-width: 768px){
+        flex-direction: row;
         }   
 
         &__link{
@@ -69,14 +66,14 @@
             justify-content: space-between;
             align-content: center;
             gap: 20px;
-            width: 25%;
-
-            @media (max-width: 767px){
             width: 100%;
-            }
+
             @media (min-width: 768px) and (max-width: 1150px){
             width: 100%;
             flex: 50%;
+            }
+            @media (min-width: 1151px){
+            width: 25%;
             }
 
             .tag-new{
@@ -118,10 +115,11 @@ h2{
     &__container{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         margin-bottom: 30px;
         
-        @media (max-width: 767px){
-        flex-direction: column;
+        @media (min-width: 768px){
+        flex-direction: row;
         }
     }
 }

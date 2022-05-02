@@ -1,8 +1,9 @@
 /*fonts color*/
 /*fonts family*/
 /*padding size*/
-/*btn violet*/
+/*btn purple*/
 /*tag "nouveau"*/
+/*heart purple*/
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap");
 * {
@@ -111,9 +112,9 @@ body h1 h2 h3 h4 {
 }
 .article__box-text {
   display: flex;
-  display: flex;
-  margin: 0px 5px 0px 5px;
   flex-direction: column;
+  position: relative;
+  margin: 0px 5px 0px 5px;
   height: 70px;
 }
 .article__box-text h4 {
@@ -131,6 +132,27 @@ body h1 h2 h3 h4 {
   font-size: 16px;
   text-align: justify;
   font-weight: lighter;
+}
+
+.article__box-text__icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  right: 5px;
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
+}
+.article__box-text__icon :hover {
+  fill: url(#gradient-heart) #9356DC;
+  transition: all 0.3s linear 0s;
+  stroke: transparent;
+}
+.article__box-text__icon__heart {
+  height: 25px;
+  width: auto;
+  text-align: center;
 }
 
 /*card menu pages*/

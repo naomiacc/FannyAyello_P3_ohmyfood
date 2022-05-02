@@ -1,4 +1,4 @@
-/*btn violet*/
+/*btn purple*/
 
 @mixin btn-purple {
     text-align: center;
@@ -29,4 +29,29 @@
     padding: 5px 10px;
     top: 10px;
     right: 30px;
+}
+
+/*heart purple*/
+
+@mixin heart-icon {
+    position:absolute;
+    width: 25px;
+    height: 25px;
+    top:8px;
+    right:5px;
+    fill:white;
+    stroke:black;
+    stroke-width: 25px;
+}
+
+@mixin heart-hover{
+    fill: url(#gradient-heart) #9356DC;
+    transition: all 0.3s linear 0s;
+    stroke:transparent;
+}
+
+@mixin heart-svg{
+    height: 25px;
+    width: auto;
+    text-align: center;
 }

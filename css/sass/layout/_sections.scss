@@ -123,3 +123,17 @@ h2{
         }
     }
 }
+
+.section__menu__title__icon{
+    @include heart-icon;
+    top: 35px;
+    right: 25px;
+
+    :hover{
+        @include heart-hover;
+    }
+
+    &__heart{
+        @include heart-svg;
+    }
+}

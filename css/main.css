@@ -428,6 +428,29 @@ h2 {
   }
 }
 
+.section__menu__title__icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 8px;
+  right: 5px;
+  fill: white;
+  stroke: black;
+  stroke-width: 25px;
+  top: 35px;
+  right: 25px;
+}
+.section__menu__title__icon :hover {
+  fill: url(#gradient-heart) #9356DC;
+  transition: all 0.3s linear 0s;
+  stroke: transparent;
+}
+.section__menu__title__icon__heart {
+  height: 25px;
+  width: auto;
+  text-align: center;
+}
+
 .footer {
   padding: 20px 20px;
   background-color: #383838;

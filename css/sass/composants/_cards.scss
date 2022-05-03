@@ -186,3 +186,29 @@
         display: none;
     }
 }
+
+.menu-box{
+    &--1{
+        animation:apparition 0.8s ease-out;
+    }
+    &--2{
+        animation:apparition 0.8s ease-out 0.16s;
+    }
+    &--3{
+        animation:apparition 0.8s ease-out 0.24s;
+    }
+    &--4{
+        animation:apparition 0.8s ease-out 0.32s;
+    }
+}
+
+@keyframes apparition{
+    from{
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0px);
+    }
+}

@@ -8,14 +8,186 @@
         <title>A la française - OhMyFood</title>
     </head>
     <body>
-        <header>
-
+        <header class="header">
+            <nav class="header__nav">
+                <a class="header__nav__arrow" href="../index.html">
+                    <i class="fa-solid fa-arrow-left"></i>               
+                </a>
+                <div class="header__nav__logo">
+                    <img class="header__nav__logo__img" src="../images/logo/ohmyfood@2x.svg" alt="logo OhMyFood">
+                </div>
+            </nav> 
+            <div class="header__img">
+                <img src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant à la française">
+            </div>
         </header>
         <!--fin partie header-->
 
-        <section>
+        <section class="section__menu">
+            <h1 class="section__menu__title">A la française</h1>
+            <div class="section__menu__title__icon">
+                <svg class="section__menu__title__icon__heart" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="544.582px" height="544.582px" viewBox="-10 -10 584.582 584.582" style="enable-background:new 0 0 544.582 544.582;" xml:space="preserve">
+                    <g>
+                        <path d="M448.069,57.839c-72.675-23.562-150.781,15.759-175.721,87.898C247.41,73.522,169.303,34.277,96.628,57.839
+                            C23.111,81.784-16.975,160.885,6.894,234.708c22.95,70.38,235.773,258.876,263.006,258.876
+                            c27.234,0,244.801-188.267,267.751-258.876C561.595,160.732,521.509,81.631,448.069,57.839z"/>
+                    </g>
+                    <defs>
+                        <linearGradient id="gradient-heart" x1="0%" y1="0%" x2="0%" y2="100%">
+                          <stop offset="0%" style="stop-color:#9356DC;stop-opacity:1" />
+                          <stop offset="100%" style="stop-color:#FF79DA;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>                                    
+                </svg>                            
+            </div>
+            <div class="section__menu__heart">
+            </div>
 
+            <div class="section__menu__container">
+                <article class="article__menu">
+                    <div class="article__menu__title">
+                        <h2 class="article__menu__title__text">ENTREES</h2>
+                        <hr class="article__menu__title__subtitle">
+                    </div>        
+
+                    <div class="article__menu__box menu-box--1">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Tartare de poulpe acidulé</h3>
+                            <span class="article__menu__box__meal__description">Aux zestes d'orange</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">25€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--2">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Velouté de légumes d'antan</h3>
+                            <span class="article__menu__box__meal__description">Carotte, panais, topinambour</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">35€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--3">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Soupe à l'oignon</h3>
+                            <span class="article__menu__box__meal__description">Revisitée</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">20€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__menu">
+                    <div class="article__menu__title">
+                        <h2 class="article__menu__title__text">PLATS</h2>
+                        <hr class="article__menu__title__subtitle">
+                    </div>              
+
+                    <div class="article__menu__box menu-box--1">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Coquilles Saint-Jacques</h3>
+                            <span class="article__menu__box__meal__description">Accompagnées d'une purée de panais</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">40€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--2">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Magret de canard</h3>
+                            <span class="article__menu__box__meal__description">Et parmentier de pommes de terre</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">35€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--3">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Pigeonneau d’Ille-et-Vilaine</h3>
+                            <span class="article__menu__box__meal__description">Sur son lit de gnocchis aux légumes</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">44€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article__menu">
+                    <div class="article__menu__title">
+                        <h2 class="article__menu__title__text">DESSERTS</h2>
+                        <hr class="article__menu__title__subtitle">
+                    </div>             
+
+                    <div class="article__menu__box menu-box--1">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Pétales de violettes glacés</h3>
+                            <span class="article__menu__box__meal__description">Et purée de noisettes</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">18€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--2">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Fondant au chocolat</h3>
+                            <span class="article__menu__box__meal__description">Revisité</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">22€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+
+                    <div class="article__menu__box menu-box--3">
+                        <div class="article__menu__box__meal">
+                            <h3 class="article__menu__box__meal__title">Millefeuille croustillant</h3>
+                            <span class="article__menu__box__meal__description">Myrtilles et pâte d’amande</span>
+                        </div>
+                        <div class="article__menu__box__price">
+                            <span class="article__menu__box__price__price">23€</span>
+                        </div>
+                        <div class="article__menu__box__check">
+                            <i class="fas fa-check-circle" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <div class="btn-box">
+                <a class="btn-link" href="#">Commander</a>
+            </div>
         </section>
+
         <!--fin partie section menu-->
 
         <footer class="footer">

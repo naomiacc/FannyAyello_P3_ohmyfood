@@ -160,30 +160,70 @@
     flex-direction: row;
     background-color: white;
     border-radius: 20px;
-    padding: 10px;
+    margin: 10px;
+    flex-basis: 100%;
+    flex-wrap: nowrap;
+    transition: all 0.5s ease-in;
 
     &__meal{
         flex-grow: 1;
+        padding: 10px 0px 10px 10px;
+        overflow: hidden;
+        text-overflow: ellipsis;
 
         &__title{
             margin:0px;
             margin:5px 0px;
             font-weight: normal;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         &__description{
             font-weight: lighter;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
     }
 
     &__price{
-        padding-right: 10px;
+        padding: 10px;
         align-self: flex-end;
     }
 
     &__check{
+        position:relative;
         background-color: $tertiary-color;
-        align-self: center;
-        display: none;
+        border-radius:0px 20px 20px 0px;
+        height: 70px;
+        width: 60px;
+        overflow: hidden;
+        transition: flex-basis 500ms ease-in-out;        
+        flex-basis: 0%;
+
+        &>i{
+            position:absolute;
+            color:white;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%) rotate(0);
+            transition: transform 400ms ease-in-out;
+            transition-delay: 100ms;   
+        }
+    }
+
+    &:hover{
+        .article__menu__box__check{
+            flex-basis: 20%;
+        }
+        i{
+            transform: translate(-50%,-50%) rotate(1turn);
+        }
+    }
+
+    &:not(:hover){
+        i{
+            transition: none;
+        }
     }
 }
 

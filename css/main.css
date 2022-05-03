@@ -206,27 +206,60 @@ body h1 h2 h3 h4 {
   flex-direction: row;
   background-color: white;
   border-radius: 20px;
-  padding: 10px;
+  margin: 10px;
+  flex-basis: 100%;
+  flex-wrap: nowrap;
+  transition: all 0.5s ease-in;
 }
 .article__menu__box__meal {
   flex-grow: 1;
+  padding: 10px 0px 10px 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .article__menu__box__meal__title {
   margin: 0px;
   margin: 5px 0px;
   font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .article__menu__box__meal__description {
   font-weight: lighter;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .article__menu__box__price {
-  padding-right: 10px;
+  padding: 10px;
   align-self: flex-end;
 }
 .article__menu__box__check {
+  position: relative;
   background-color: #99E2D0;
-  align-self: center;
-  display: none;
+  border-radius: 0px 20px 20px 0px;
+  height: 70px;
+  width: 60px;
+  overflow: hidden;
+  transition: flex-basis 500ms ease-in-out;
+  flex-basis: 0%;
+}
+.article__menu__box__check > i {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0);
+  transition: transform 400ms ease-in-out;
+  transition-delay: 100ms;
+}
+.article__menu__box:hover .article__menu__box__check {
+  flex-basis: 20%;
+}
+.article__menu__box:hover i {
+  transform: translate(-50%, -50%) rotate(1turn);
+}
+.article__menu__box:not(:hover) i {
+  transition: none;
 }
 
 .menu-box--1 {

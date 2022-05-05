@@ -263,20 +263,20 @@ body h1 h2 h3 h4 {
 }
 
 .menu-box--1 {
-  -webkit-animation: apparition 0.8s ease-out;
-          animation: apparition 0.8s ease-out;
+  -webkit-animation: apparition 0.8s ease-out 1s;
+          animation: apparition 0.8s ease-out 1s;
 }
 .menu-box--2 {
-  -webkit-animation: apparition 0.8s ease-out 0.16s;
-          animation: apparition 0.8s ease-out 0.16s;
+  -webkit-animation: apparition 0.8s ease-out 1.16s;
+          animation: apparition 0.8s ease-out 1.16s;
 }
 .menu-box--3 {
-  -webkit-animation: apparition 0.8s ease-out 0.24s;
-          animation: apparition 0.8s ease-out 0.24s;
+  -webkit-animation: apparition 0.8s ease-out 1.24s;
+          animation: apparition 0.8s ease-out 1.24s;
 }
 .menu-box--4 {
-  -webkit-animation: apparition 0.8s ease-out 0.32s;
-          animation: apparition 0.8s ease-out 0.32s;
+  -webkit-animation: apparition 0.8s ease-out 2.32s;
+          animation: apparition 0.8s ease-out 2.32s;
 }
 
 @-webkit-keyframes apparition {

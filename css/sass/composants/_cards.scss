@@ -229,16 +229,16 @@
 
 .menu-box{
     &--1{
-        animation:apparition 0.8s ease-out 1s;
+        opacity:0; animation:apparition 1s ease-out forwards;
     }
     &--2{
-        animation:apparition 0.8s ease-out 1.15s;
+        opacity:0; animation:apparition 1s ease-out 0.5s forwards;
     }
     &--3{
-        animation:apparition 0.8s ease-out 1.23s;
+        opacity:0; animation:apparition 1s ease-out 1s forwards;
     }
     &--4{
-        animation:apparition 0.8s ease-out 2.31s;
+        opacity:0; animation:apparition 1s ease-out 1.5s forwards;
     }
 }
 

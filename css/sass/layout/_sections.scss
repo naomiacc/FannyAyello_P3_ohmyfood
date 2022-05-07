@@ -105,11 +105,12 @@ h2{
     z-index: 1;
 
     &__title{
+        width: 100%;
         text-align: left;
         font-family: 'Shrikhand', cursive;
         font-size: 25px;
         font-weight: lighter;
-        margin-left: 15px;
+        padding-left: 15px;
     }
 
     &__container{

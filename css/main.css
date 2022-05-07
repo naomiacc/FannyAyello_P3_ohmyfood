@@ -200,22 +200,23 @@ body h1 h2 h3 h4 {
 }
 
 .article__menu__box {
-  width: 100%;
   height: 70px;
   display: flex;
   flex-direction: row;
   background-color: white;
   border-radius: 20px;
-  margin: 10px;
+  margin: 10px 0px 10px 0px;
   flex-basis: 100%;
   flex-wrap: nowrap;
   transition: all 0.5s ease-in;
+  font-size: 15px;
 }
 .article__menu__box__meal {
   flex-grow: 1;
   padding: 10px 0px 10px 10px;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .article__menu__box__meal__title {
   margin: 0px;
@@ -237,8 +238,6 @@ body h1 h2 h3 h4 {
   position: relative;
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
-  height: 70px;
-  width: 60px;
   overflow: hidden;
   transition: flex-basis 500ms ease-in-out;
   flex-basis: 0%;
@@ -573,11 +572,12 @@ h2 {
   z-index: 1;
 }
 .section__menu__title {
+  width: 100%;
   text-align: left;
   font-family: "Shrikhand", cursive;
   font-size: 25px;
   font-weight: lighter;
-  margin-left: 15px;
+  padding-left: 15px;
 }
 .section__menu__container {
   display: flex;

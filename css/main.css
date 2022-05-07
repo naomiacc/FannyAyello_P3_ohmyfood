@@ -361,11 +361,11 @@ body h1 h2 h3 h4 {
 }
 
 .dot {
-  width: 50px;
-  height: 50px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background: linear-gradient(#FF79DA, #9356DC);
-  margin: 0 15px;
+  margin: 0 5px;
   -webkit-animation: loader 0.5s alternate infinite;
           animation: loader 0.5s alternate infinite;
 }

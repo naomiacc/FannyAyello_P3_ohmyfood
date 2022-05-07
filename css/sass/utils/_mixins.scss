@@ -12,6 +12,8 @@
 @mixin btn-purple-hover{
     opacity: 0.9;
     box-shadow: 3px 3px 8px 3px grey;
+    transition: 50ms linear;
+    transform: scale(1.04);
 }
 
 @mixin btn-purple-box{

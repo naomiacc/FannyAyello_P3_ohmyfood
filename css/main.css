@@ -34,6 +34,8 @@ body h1 h2 h3 h4 {
 .btn-link:hover {
   opacity: 0.9;
   box-shadow: 3px 3px 8px 3px grey;
+  transition: 50ms linear;
+  transform: scale(1.04);
 }
 
 .btn-box {
@@ -208,8 +210,9 @@ body h1 h2 h3 h4 {
   margin: 10px 0px 10px 0px;
   flex-basis: 100%;
   flex-wrap: nowrap;
-  transition: all 0.5s ease-in;
   font-size: 15px;
+  cursor: pointer;
+  transition: apparition 0.5s ease-in;
 }
 .article__menu__box__meal {
   flex-grow: 1;

@@ -162,8 +162,9 @@
     margin: 10px 0px 10px 0px;
     flex-basis: 100%;
     flex-wrap: nowrap;
-    transition: all 0.5s ease-in;
     font-size: 15px;
+    cursor: pointer;
+    transition: apparition 0.5s ease-in;
 
     &__meal{
         flex-grow: 1;
